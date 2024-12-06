@@ -10,7 +10,7 @@ const init = async () => {
     // Create a server with a host and port
     const server = Hapi.server({
         port: portVar,
-        host: 'localhost',
+        host: '0.0.0.0',
         routes: {
             cors: {
                 origin: ['*'],
